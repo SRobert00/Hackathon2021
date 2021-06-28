@@ -1,0 +1,19 @@
+/*.ipr
+/*.iws
+**/*.idea
+**/target
+**/*.iml
+**/*.bak
+**/*.patch
+**/dependencies.txt
+**/dependencies.log
+**/deps.txt
+**/deps.log
+**/__pycache__
+*log**.txt.*
+*log**.txt*
+data/
+*.log
+dependency*.log
+**/ToDos for refactoring.txt
+

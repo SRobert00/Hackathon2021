@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head class="back-field">
+    <meta charset="UTF-8">
+    <title>CryptRoWallet</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body background="img/photos/udi-BMV_RO_V2.jpg" style="width: 55vw; min-width: 330px;">
+<section class="about-section">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="section-title">
+                <h1>CJT Invest</h1>
+            </div>
+            <div class="text-box">
+                <h2>Consiliul Județean Timiș (CJT)</h2>
+                <h2>Este autoritatea administrației publice locale din Județul Timiș,</h2>
+                <h2>constituită la nivel județean,pentru coordonarea activității consiliilor comunale și orășenești,</h2>
+                <h2>în vederea realizării serviciilor publice de interes județean.</h2>
+                <h2>Consiliul Județean Timiș este compus din consilieri județeni aleși prin vot universal,</h2>
+                <h2>gal, direct, secret și liber exprimat, în condițiile stabilite de Legea privind alegerile locale.</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="auth-section">
+    <div class="section-title">
+        <form th:action="@{/dashboard}" method="get">
+        <button class="button orange-btn" type="Submit">Go to Dashboard!</button>
+        </form>
+    </div>
+    <!--        <div class="row">-->
+    <!--            <div class="col-md-12">-->
+    <!--                <div class="auth-box">-->
+    <!--                    <p>Already have an account? Login to enjoy all our app functionalities!</p>-->
+    <!--                    <form th:action="@{/login}" method="get">-->
+    <!--                        <button class="button orange-btn" type="Submit">Login</button>-->
+    <!--                    </form>-->
+    <!--                    <p>Don't have an account? No worries, you can register by pressing the button below:</p>-->
+    <!--                    <form th:action="@{/registration}" method="get">-->
+    <!--                        <button class="button orange-btn" type="Submit">Register</button>-->
+    <!--                    </form>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+</section>
+
+</body>
+</html>

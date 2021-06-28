@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <link rel="stylesheet" href="css/app.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+    <meta name="author" content="AdminKit">
+    <meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+    <title>AdminKit Demo - Bootstrap 5 Admin Template</title>
+
+    <link href="css/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body background="img/photos/back.jpg">
+<div class="wrapper">
+    <nav id="sidebar" class="sidebar js-sidebar">
+        <div class="sidebar-content js-simplebar">
+            <a class="sidebar-brand" href="/">
+                <span class="align-middle">CJTI Invest</span>
+            </a>
+
+
+            <ul class="sidebar-nav">
+                <li class="sidebar-header">
+                    Pagini
+                </li>
+
+                <li class="sidebar-item active">
+                    <a class="sidebar-link" href="dashboard">
+                        <i class="align-middle" data-feather="menu"></i> <span class="align-middle">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="users">
+                        <i class="align-middle" data-feather="users"></i> <span class="align-middle">Utilizatori</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">Proiecte</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <i class="align-middle" data-feather="shield"></i> <span class="align-middle">Organigrama</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <i class="align-middle" data-feather="book"></i> <span class="align-middle">Contact</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-header">
+                    Componente
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Login</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <i class="align-middle" data-feather="log-out"></i> <span class="align-middle">Inregistrare</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profil</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <i class="align-middle" data-feather="credit-card"></i> <span
+                            class="align-middle">Modul plati</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Forum</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <nav class="navbar navbar-expand navbar-light navbar-bg">
+            <a class="sidebar-toggle js-sidebar-toggle">
+                <i class="hamburger align-self-center"></i>
+            </a>
+
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav navbar-align">
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+                            <i class="align-middle" data-feather="settings"></i>
+                        </a>
+
+                        <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                            <img src="img/avatars/avatar-3.jpg" class="avatar img-fluid rounded me-1" alt="Tanti Lenuta" /> <span class="text-dark">Tanti Lenuta</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+                            <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="pages-settings.html"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
+                            <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="content">
+            <div class="container-fluid p-0">
+
+                <h1 class="h3 mb-3"><strong>Proiect</strong> - adauga</h1>
+<div class="card">
+    <div class="card-body">
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Denumire obiectiv</label>
+                    <input type="text" class="form-control" id="denumireObiectiv" >
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Directia</label>
+                    <input type="text" class="form-control" id="directia">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Persoana responsabila</label>
+                    <input type="text" class="form-control" id="persoanaResponsabila" >
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Buget CJ</label>
+                    <input type="text" class="form-control" id="bugetcj">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Contributie CJT</label>
+                    <input type="text" class="form-control" id="contributiecjt" >
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Alte surse</label>
+                    <input type="text" class="form-control" id="altesurse" >
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Fonduri guvern PNDL</label>
+                    <input type="text" class="form-control" id="gonduriguvernpndl" >
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Fonduri proiecte EU</label>
+                    <input type="text" class="form-control" id="fonduriproiecteeu">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Total</label>
+                    <input type="text" class="form-control" id="total" >
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Probleme</label>
+                    <input type="text" class="form-control" id="probleme">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Trimestru</label>
+                    <input type="text" class="form-control" id="trimestru" >
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>Status</label>
+                    <select id="status" class="form-control">
+                        <option selected>Choose...</option>
+                        <option value="verde">Finalizat</option>
+                        <option value="galben">In lucru</option>
+                        <option value="rosu">In criza</option>
+                    </select>
+                </div>
+            </div>
+            <button id="save" class="btn btn-primary">Salveaza</button>
+    </div>
+</div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row text-muted">
+                    <div class="col-6 text-start">
+                        <p class="mb-0">
+                            <a class="text-muted" href="https://adminkit.io/" target="_blank"><strong>AdminKit Demo</strong></a> &copy;
+                        </p>
+                    </div>
+                    <div class="col-6 text-end">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="text-muted" href="https://adminkit.io/" target="_blank">Support</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="text-muted" href="https://adminkit.io/" target="_blank">Help Center</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="text-muted" href="https://adminkit.io/" target="_blank">Privacy</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="text-muted" href="https://adminkit.io/" target="_blank">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+
+<script src="js/app.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#save").click(function() {
+            var denumire = $("#denumireObiectiv").val();
+            var directia = $("#directia").val();
+            var persoanaResponsabila = $("#persoanaResponsabila").val();
+            var bugetcj = $("#bugetcj").val();
+            var contributiecjt = $("#contributiecjt").val();
+            var fonduriproiecteeu = $("#fonduriproiecteeu").val();
+            var total = $("#total").val();
+            var probleme = $("#probleme").val();
+            var trimestru = $("#trimestru").val();
+            var status = $("#status").val();
+            var altesurse = $("#altesurse").val();
+            var gonduriguvernpndl = $("#gonduriguvernpndl").val();
+            var request = {
+                  "alteSurse": altesurse,
+                  "bugetCJT": bugetcj,
+                  "contributieCJT": contributiecjt,
+                  "denumireObiectiv": denumire,
+                  "directia": directia,
+                  "fonduriGuvernPNDL": gonduriguvernpndl,
+                  "fonduriProiecteEU": fonduriproiecteeu,
+                  "persoanaResponsabila": persoanaResponsabila,
+                  "probleme": probleme,
+                  "statusCuloare": status,
+                  "total": total,
+                  "trimestru": trimestru
+            }
+            console.log(request);
+
+            $.ajax({
+
+                url: '/cjtinvest/addProiect',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: "POST",
+                data: JSON.stringify(request),
+                dataType: 'json',
+                success: function() {
+                    window.location.href="/dashboard"
+                }
+            });
+        });
+
+    });
+</script>
+
+
+</body>
+
+</html>
